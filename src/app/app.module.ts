@@ -6,19 +6,24 @@ import { AppComponent } from './app.component';
 import { GridTableComponent } from './components/grid-table/grid-table.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { HttpClientModule } from '@angular/common/http';
+import{SelectRedererComponent} from 'src/app/components/selectRenderer/selectRenderer.component'
+import { FormsModule } from '@angular/forms';
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    GridTableComponent
+    GridTableComponent,
+    SelectRedererComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AgGridModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
