@@ -1,13 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import * as data from 'src/employee.json';
-import { ColDef, GridApi, GridReadyEvent,RowNodeTransaction,ICellEditorComp,
-  ICellEditorParams,} from 'ag-grid-community';
-import { MockServiceService } from 'src/app/service/mockApi.service';
-import { Role } from 'src/app/enum/role.enum';
-import { IUser } from 'src/app/interfaces/users.interface' 
+import { ColDef, GridApi, GridReadyEvent,RowNodeTransaction} from 'ag-grid-community';
+import { MockServiceService } from 'src/app/services/mockApi.service';
+import { Role } from 'src/app/enums/role.enum';
+import{DropDownComponent} from 'src/app/components/dropdown/dropdown.component'
 
-
-import{SelectRedererComponent} from 'src/app/components/selectRenderer/selectRenderer.component'
 
 @Component({
   selector: 'app-grid-table',
@@ -19,13 +16,12 @@ export class GridTableComponent implements OnInit {
   employeesjson=data; 
   hideTable = false;
   public editType = 'fullRow';
-  public rowData: any;
+  public rowData=[];
   private gridApi!: GridApi;
   public rowSelection: 'single' | 'multiple' = 'single'
   role:Role=Role.Subscriber;
-  roles=Object.keys(Role);
-
-  roleUser=Role;
+  
+ 
  
   constructor(private mockService:MockServiceService) {
   }
@@ -54,7 +50,7 @@ export class GridTableComponent implements OnInit {
     minWidth: 50},
 
     {"headerName":"ROLE","field":"role",width: 90, 
-    minWidth: 50,cellEditor:SelectRedererComponent},
+    minWidth: 50,cellEditor:DropDownComponent},
 
     {"headerName":"ADDRESS","field":"address",width: 90,
     minWidth: 50},
@@ -102,59 +98,11 @@ export class GridTableComponent implements OnInit {
     this.hideTable = true;
     const loadbtn = document.getElementById("loadData") as HTMLElement; 
     loadbtn.innerHTML = "Refresh Data"; 
-    this.mockService.getData().subscribe((data:{}) => {
+    this.mockService.getData().subscribe((data:[]) => {
     this.rowData = data;
     });
   }
 }
-// class DatePicker implements ICellEditorComp {
-//   eInput!: HTMLInputElement;
-
-//   // gets called once before the renderer is used
-//   init(params: ICellEditorParams) {
-//     // create the cell
-//     this.eInput = document.createElement('input');
-//     this.eInput.value = params.value;
-//     this.eInput.classList.add('ag-input');
-//     this.eInput.style.height = '100%';
-
-//     // https://jqueryui.com/datepicker/
-//     $(this.eInput).datepicker({
-//       dateFormat: 'dd/mm/yy',
-//       onSelect: () => {
-//         this.eInput.focus();
-//       },
-//     });
-//   }
-
-//   // gets called once when grid ready to insert the element
-//   getGui() {
-//     return this.eInput;
-//   }
-
-//   // focus and select can be done after the gui is attached
-//   afterGuiAttached() {
-//     this.eInput.focus();
-//     this.eInput.select();
-//   }
-
-//   // returns the new value after editing
-//   getValue() {
-//     return this.eInput.value;
-//   }
-
-//   // any cleanup we need to be done here
-//   destroy() {
-//     // but this example is simple, no cleanup, we could
-//     // even leave this method out as it's optional
-//   }
-
-//   // if true, then this editor will appear in a popup
-//   isPopup() {
-//     // and we could leave this method out also, false is the default
-//     return false;
-//   }
-// }
 
 
 
