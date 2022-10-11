@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { GridTableComponent } from './components/grid-table/grid-table.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { HttpClientModule } from '@angular/common/http';
-import{DropDownComponent} from 'src/app/components/dropdown/dropdown.component'
+import{RoleDropDownComponent} from 'src/app/components/roledropdown/roledropdown.component'
 import { FormsModule } from '@angular/forms';
 
 
@@ -16,7 +16,7 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     GridTableComponent,
-    DropDownComponent
+    RoleDropDownComponent
   ],
   imports: [
     BrowserModule,

@@ -4,12 +4,12 @@ import { GridReadyEvent } from 'ag-grid-community';
 
  
   @Component({
-    selector: 'app-dropdown',
-    templateUrl: './dropdown.component.html',
-    styleUrls: ['./dropdown.component.css']
+    selector: 'app-roledropdown',
+    templateUrl: './roledropdown.component.html',
+    styleUrls: ['./roledropdown.component.css']
   })
 
-  export class DropDownComponent implements ICellEditorAngularComp,
+  export class RoleDropDownComponent implements ICellEditorAngularComp,
     AfterViewInit {
       public params:object={};
       public value: object={};

@@ -3,7 +3,7 @@ import * as data from 'src/employee.json';
 import { ColDef, GridApi, GridReadyEvent,RowNodeTransaction} from 'ag-grid-community';
 import { MockServiceService } from 'src/app/services/mockApi.service';
 import { Role } from 'src/app/enums/role.enum';
-import{DropDownComponent} from 'src/app/components/dropdown/dropdown.component'
+import{RoleDropDownComponent} from 'src/app/components/roledropdown/roledropdown.component'
 
 
 @Component({
@@ -50,7 +50,7 @@ export class GridTableComponent implements OnInit {
     minWidth: 50},
 
     {"headerName":"ROLE","field":"role",width: 90, 
-    minWidth: 50,cellEditor:DropDownComponent},
+    minWidth: 50,cellEditor:RoleDropDownComponent},
 
     {"headerName":"ADDRESS","field":"address",width: 90,
     minWidth: 50},
@@ -67,7 +67,7 @@ export class GridTableComponent implements OnInit {
   // To select the specific row for delete operation
   onSelectionChanged() {
     const selectedRows = this.gridApi.getSelectedRows();
-    (document.querySelector('#selectedRows') as any).innerHTML =
+    (document.querySelector('#selectedRows')as any).innerHTML =
     selectedRows.length === 1 ? selectedRows[0].id : '';
   }
 
@@ -102,6 +102,8 @@ export class GridTableComponent implements OnInit {
     this.rowData = data;
     });
   }
+
+  
 }
 
 
