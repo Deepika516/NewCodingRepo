@@ -1,6 +1,6 @@
-<select [(ngModel)]="value">
+<select [(ngModel)]="rolevalue">
   <option disabled>Choose your Role</option>
-  <option *ngFor="let value of values" [value]="value">
-  {{ value }}
+  <option *ngFor="let rolevalue of rolevalues" [value]="rolevalue">
+  {{ rolevalue }}
   </option>
 </select> 

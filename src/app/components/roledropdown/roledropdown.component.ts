@@ -1,6 +1,6 @@
-import {Component,ViewChild,ViewContainerRef,AfterViewInit} from '@angular/core';
+import {Component,ViewChild,ViewContainerRef} from '@angular/core';
 import {AgGridAngular, ICellEditorAngularComp } from 'ag-grid-angular';
-import { GridReadyEvent } from 'ag-grid-community';
+
 
  
   @Component({
@@ -9,29 +9,26 @@ import { GridReadyEvent } from 'ag-grid-community';
     styleUrls: ['./roledropdown.component.css']
   })
 
-  export class RoleDropDownComponent implements ICellEditorAngularComp,
-    AfterViewInit {
+  export class RoleDropDownComponent implements ICellEditorAngularComp
+     {
       public params:object={};
-      public value: object={};
+      public rolevalue: object={};
     
-      values = ["superadmin","admin","subscriber"]
+      rolevalues = ["superadmin","admin","subscriber"]
     
       @ViewChild('input', { read: ViewContainerRef }) 
       public input:object={};
     
       agInit(params: {value:object}): void {
         this.params = params;
-        this.value = params.value;
+        this.rolevalue = params.value;
       }
     
       getValue(): object {
-        return this.value;
+        return this.rolevalue;
       }
     
       isCancelAfterEnd(): boolean {
         return false;
-      }
-    
-      ngAfterViewInit() {   
       }
     }

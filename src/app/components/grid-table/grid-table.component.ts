@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import * as data from 'src/employee.json';
-import { ColDef, GridApi, GridReadyEvent,RowNodeTransaction} from 'ag-grid-community';
+import { ColDef, GridApi, GridReadyEvent,RowNodeTransaction,RowModelType,
+               IDatasource, IGetRowsParams} from 'ag-grid-community';
+
 import { MockServiceService } from 'src/app/services/mockApi.service';
 import { Role } from 'src/app/enums/role.enum';
 import{RoleDropDownComponent} from 'src/app/components/roledropdown/roledropdown.component'
@@ -20,9 +22,16 @@ export class GridTableComponent implements OnInit {
   private gridApi!: GridApi;
   public rowSelection: 'single' | 'multiple' = 'single'
   role:Role=Role.Subscriber;
+  // Used for Infinite Scroll
+  public rowModelType: RowModelType = 'infinite';
+  cacheBlockSize = 10;
+  cacheOverflowSize=1;
+  maxConcurrentDatasourceRequests=1;
+  maxBlocksInCache=1;
+  infiniteInitialRowCount=5;
   
- 
- 
+  
+
   constructor(private mockService:MockServiceService) {
   }
  
@@ -63,7 +72,7 @@ export class GridTableComponent implements OnInit {
     flex: 1,
     editable: true,
   };
-
+  
   // To select the specific row for delete operation
   onSelectionChanged() {
     const selectedRows = this.gridApi.getSelectedRows();
@@ -72,6 +81,7 @@ export class GridTableComponent implements OnInit {
   }
 
   //on the of click of delete button delete the specific row
+ 
  onDelete(){
   const selectedData = this.gridApi.getSelectedRows();
   const res = this.gridApi.applyTransaction({ remove: selectedData })!;
@@ -83,16 +93,34 @@ export class GridTableComponent implements OnInit {
   if (res.remove)
   {
      res.remove.forEach(function (rowNode) {
-     console.log('Removed Row Node', rowNode);
   });
   }
  }
 
  // to Edit the row and save the updated data 
-  onGridReady(params: GridReadyEvent) {
+  onGridReady(params: GridReadyEvent)
+   {
     this.gridApi = params.api;
-  }
-
+    this.mockService.getData().subscribe((data) => {
+      const dataSource: IDatasource = {
+        rowCount: undefined,
+        getRows: (params: IGetRowsParams) => {
+          // At this point in code, you would call the server.
+          setTimeout(function () {
+            const rowsThisPage = data.slice(params.startRow, params.endRow);
+            // if on or after the last page, work out the last row.
+            let lastRow = -1;
+            if (data.length <= params.endRow) {
+              lastRow = data.length;
+            }
+            // call the success callback
+            params.successCallback(rowsThisPage, lastRow);
+          }, 500);
+        },
+      };
+      params.api!.setDatasource(dataSource);
+    });
+}
   // to click the loadbutton and show the ag grid table
   onClick(){
     this.hideTable = true;
@@ -102,9 +130,8 @@ export class GridTableComponent implements OnInit {
     this.rowData = data;
     });
   }
-
-  
 }
+
 
 
 
