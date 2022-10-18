@@ -2,11 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import * as data from 'src/employee.json';
 import { ColDef, GridApi, GridReadyEvent,RowNodeTransaction,RowModelType,
                IDatasource, IGetRowsParams} from 'ag-grid-community';
-
 import { MockServiceService } from 'src/app/services/mockApi.service';
 import { Role } from 'src/app/enums/role.enum';
 import{RoleDropDownComponent} from 'src/app/components/roledropdown/roledropdown.component'
-
+import { IUser } from 'src/app/interfaces/users.interface';
 
 @Component({
   selector: 'app-grid-table',
@@ -18,10 +17,11 @@ export class GridTableComponent implements OnInit {
   employeesjson=data; 
   hideTable = false;
   public editType = 'fullRow';
-  public rowData=[];
+  public rowData:IUser[]=[];
   private gridApi!: GridApi;
   public rowSelection: 'single' | 'multiple' = 'single'
   role:Role=Role.Subscriber;
+
   // Used for Infinite Scroll
   public rowModelType: RowModelType = 'infinite';
   cacheBlockSize = 10;
@@ -30,8 +30,6 @@ export class GridTableComponent implements OnInit {
   maxBlocksInCache=1;
   infiniteInitialRowCount=5;
   
-  
-
   constructor(private mockService:MockServiceService) {
   }
  
@@ -76,32 +74,34 @@ export class GridTableComponent implements OnInit {
   // To select the specific row for delete operation
   onSelectionChanged() {
     const selectedRows = this.gridApi.getSelectedRows();
-    (document.querySelector('#selectedRows')as any).innerHTML =
+    (document.querySelector('#selectedRows')as HTMLElement).innerHTML =
     selectedRows.length === 1 ? selectedRows[0].id : '';
   }
 
   //on the of click of delete button delete the specific row
- 
- onDelete(){
+ onRemoveSelected() {
   const selectedData = this.gridApi.getSelectedRows();
-  const res = this.gridApi.applyTransaction({ remove: selectedData })!;
+  const res = this.gridApi.applyTransaction({ remove: selectedData });
+  if(res!=null)
   this.printResult(res);
- }
+}
 
  printResult(res: RowNodeTransaction) 
  {
-  if (res.remove)
-  {
-     res.remove.forEach(function (rowNode) {
-  });
+ 
+  if (res.remove) {
+    res.remove.forEach(function (rowNode) {
+      console.log('Removed Row Node', rowNode);
+    });
   }
  }
 
+ 
  // to Edit the row and save the updated data 
   onGridReady(params: GridReadyEvent)
    {
     this.gridApi = params.api;
-    this.mockService.getData().subscribe((data) => {
+    this.mockService.getData().subscribe((data:IUser[]) => {
       const dataSource: IDatasource = {
         rowCount: undefined,
         getRows: (params: IGetRowsParams) => {
@@ -126,9 +126,6 @@ export class GridTableComponent implements OnInit {
     this.hideTable = true;
     const loadbtn = document.getElementById("loadData") as HTMLElement; 
     loadbtn.innerHTML = "Refresh Data"; 
-    this.mockService.getData().subscribe((data:[]) => {
-    this.rowData = data;
-    });
   }
 }
 

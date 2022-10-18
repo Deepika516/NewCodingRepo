@@ -1,7 +1,5 @@
 import {Component,ViewChild,ViewContainerRef} from '@angular/core';
 import {AgGridAngular, ICellEditorAngularComp } from 'ag-grid-angular';
-
-
  
   @Component({
     selector: 'app-roledropdown',
@@ -24,10 +22,12 @@ import {AgGridAngular, ICellEditorAngularComp } from 'ag-grid-angular';
         this.rolevalue = params.value;
       }
     
+      // the final value to send to the grid, on completion of editing
       getValue(): object {
         return this.rolevalue;
       }
-    
+
+      // Gets called once when editing is finished
       isCancelAfterEnd(): boolean {
         return false;
       }
