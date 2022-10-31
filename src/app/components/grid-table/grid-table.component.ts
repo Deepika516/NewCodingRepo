@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import * as data from 'src/employee.json';
 import { ColDef, GridApi, GridReadyEvent,RowNodeTransaction,RowModelType,
-               IDatasource, IGetRowsParams} from 'ag-grid-community';
+               IDatasource, IGetRowsParams} from 'ag-grid-community';             
 import { MockServiceService } from 'src/app/services/mockApi.service';
 import { Role } from 'src/app/enums/role.enum';
-import{RoleDropDownComponent} from 'src/app/components/roledropdown/roledropdown.component'
+import { RoleDropDownComponent } from 'src/app/components/roledropdown/roledropdown.component'
 import { IUser } from 'src/app/interfaces/users.interface';
+
 
 @Component({
   selector: 'app-grid-table',
@@ -78,32 +79,26 @@ export class GridTableComponent implements OnInit {
     selectedRows.length === 1 ? selectedRows[0].id : '';
   }
 
-  //on the of click of delete button delete the specific row
- onRemoveSelected() {
-  const selectedData = this.gridApi.getSelectedRows();
-  const res = this.gridApi.applyTransaction({ remove: selectedData });
-  if(res!=null)
-  this.printResult(res);
-}
-
- printResult(res: RowNodeTransaction) 
- {
- 
-  if (res.remove) {
-    res.remove.forEach(function (rowNode) {
-      console.log('Removed Row Node', rowNode);
-    });
+//   //on the of click of delete button delete the specific row
+onRemoveSelected() {
+  var selectedRows = this.gridApi.getSelectedNodes();
+  if (!selectedRows || selectedRows.length === 0) {
+    return;
   }
- }
-
- 
- // to Edit the row and save the updated data 
-  onGridReady(params: GridReadyEvent)
+  let selectedRow = selectedRows[0];
+  let selectedRowId = selectedRow.data.id;
+  this.mockService.deleteData(selectedRowId)
+  .subscribe(() => {
+   })
+}
+          
+// to Edit the row and save the updated data 
+  onGridReady(params: GridReadyEvent): void
    {
     this.gridApi = params.api;
     this.mockService.getData().subscribe((data:IUser[]) => {
       const dataSource: IDatasource = {
-        rowCount: undefined,
+        rowCount:60,
         getRows: (params: IGetRowsParams) => {
           // At this point in code, you would call the server.
           setTimeout(function () {
@@ -121,7 +116,7 @@ export class GridTableComponent implements OnInit {
       params.api!.setDatasource(dataSource);
     });
 }
-  // to click the loadbutton and show the ag grid table
+// to click the loadbutton and show the ag grid table
   onClick(){
     this.hideTable = true;
     const loadbtn = document.getElementById("loadData") as HTMLElement; 

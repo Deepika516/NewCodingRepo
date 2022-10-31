@@ -1,19 +1,19 @@
 {
   "employees": [
-    {  
-      "id":"T2201",
+    {
+      "id": "T2201",
       "first_name": "Olimpia",
       "middle_name": "Erwéi",
       "last_name": "Drinkeld",
       "email": "odrinkeld0@wikipedia.org",
       "phone_no": "432-132-0511",
-      "role":"Admin",
+      "role": "Admin",
       "address": "Afghanistan",
       "doj": "04/12/1990",
       "isEdit": false
-    
     },
-    {  "id":"T2202",
+    {
+      "id": "T2202",
       "first_name": "Nolan",
       "middle_name": "Marie-thérèse",
       "last_name": "Corkell",
@@ -21,11 +21,11 @@
       "phone_no": "139-649-8238",
       "role": "SuperAdmin",
       "address": "Afghanistan",
-      "doj":"10/12/1990",
+      "doj": "10/12/1990",
       "isEdit": false
     },
     {
-      "id":"T2203",
+      "id": "T2203",
       "first_name": "Constancia",
       "middle_name": "Léa",
       "last_name": "Edds",
@@ -33,58 +33,11 @@
       "phone_no": "946-622-7849",
       "role": "Subscriber",
       "address": "Afghanistan",
-      "doj":"12/12/2012",
+      "doj": "12/12/2012",
       "isEdit": false
     },
     {
-      "id":"T2204",      
-      "first_name": "Yance",
-      "middle_name": "Styrbjörn",
-      "last_name": "Agus",
-      "email": "yagus3@alexa.com",
-      "phone_no": "865-889-1912",
-      "role": "Subscriber",
-      "address": "Afghanistan",
-      "doj":"12/04/1995",
-      "isEdit": false
-    },
-    {
-      "id":"T2205",       
-      "first_name": "Margaretta",
-      "middle_name": "Håkan",
-      "last_name": "Ruppel",
-      "email": "mruppel4@addthis.com",
-      "phone_no": "486-588-5170",
-      "role": "SuperAdmin",
-      "address": "Afghanistan",
-      "doj":"05/10/1993",
-      "isEdit": false
-    },
-    {
-      "id":"T2206",
-      "first_name": "Bobette",
-      "middle_name": "Médiamass",
-      "last_name": "Ethelstone",
-      "email": "bethelstone5@unblog.fr",
-      "phone_no": "587-904-2220",
-      "role": "Admin",
-      "address": "Afghanistan",
-      "doj":"10/10/2010",
-      "isEdit": false
-    },
-    {
-      "id":"T2207",
-      "first_name": "Bud",
-      "middle_name": "Marie-josée",
-      "last_name": "Takos",
-      "email": "btakos6@disqus.com",
-      "phone_no": "925-541-3707",
-      "role": "Subscriber",
-      "address": "Afghanistan",
-      "doj":"12/12/1992",
-      "isEdit": false
-    },
-    {  "id":"T2208",
+      "id": "T2208",
       "first_name": "Johna",
       "middle_name": "Dafnée",
       "last_name": "Maggi",
@@ -92,11 +45,11 @@
       "phone_no": "793-630-4116",
       "role": "SuperAdmin",
       "address": "Afghanistan",
-      "doj":"10/05/1996",
+      "doj": "10/05/1996",
       "isEdit": false
     },
     {
-      "id":"T2209",
+      "id": "T2209",
       "first_name": "Amelia",
       "middle_name": "Adélaïde",
       "last_name": "Dumbleton",
@@ -104,36 +57,23 @@
       "phone_no": "818-817-8740",
       "role": "Subscriber",
       "address": "Afghanistan",
-      "doj":"10/02/2005",
+      "doj": "10/02/2005",
       "isEdit": false
     },
     {
-      "id":"T22010",
-      "first_name": "Rasla",
-      "middle_name": "Inès",
-      "last_name": "Urvoy",
-      "email": "rurvoy9@artisteer.com",
-      "phone_no": "687-290-7249",
-      "role": "Admin",
-      "address": "Afghanistan",
-      "doj":"12/12/1991",
-      "isEdit": false
-    },
-
-    {  
-      "id":"T22011",
+      "id": "T22011",
       "first_name": "Olimpia",
       "middle_name": "Erwéi",
       "last_name": "Drinkeld",
       "email": "odrinkeld0@wikipedia.org",
       "phone_no": "432-132-0511",
-      "role":"Admin",
+      "role": "Admin",
       "address": "Afghanistan",
       "doj": "04/12/1990",
       "isEdit": false
-    
     },
-    {  "id":"T22012",
+    {
+      "id": "T22012",
       "first_name": "Nolan",
       "middle_name": "Marie-thérèse",
       "last_name": "Corkell",
@@ -141,11 +81,11 @@
       "phone_no": "139-649-8238",
       "role": "SuperAdmin",
       "address": "Afghanistan",
-      "doj":"10/12/1990",
+      "doj": "10/12/1990",
       "isEdit": false
     },
     {
-      "id":"T22013",
+      "id": "T22013",
       "first_name": "Constancia",
       "middle_name": "Léa",
       "last_name": "Edds",
@@ -153,11 +93,11 @@
       "phone_no": "946-622-7849",
       "role": "Subscriber",
       "address": "Afghanistan",
-      "doj":"12/12/2012",
+      "doj": "12/12/2012",
       "isEdit": false
     },
     {
-      "id":"T22014",      
+      "id": "T22014",
       "first_name": "Yance",
       "middle_name": "Styrbjörn",
       "last_name": "Agus",
@@ -165,23 +105,11 @@
       "phone_no": "865-889-1912",
       "role": "Subscriber",
       "address": "Afghanistan",
-      "doj":"12/04/1995",
+      "doj": "12/04/1995",
       "isEdit": false
     },
     {
-      "id":"T22015",       
-      "first_name": "Margaretta",
-      "middle_name": "Håkan",
-      "last_name": "Ruppel",
-      "email": "mruppel4@addthis.com",
-      "phone_no": "486-588-5170",
-      "role": "SuperAdmin",
-      "address": "Afghanistan",
-      "doj":"05/10/1993",
-      "isEdit": false
-    },
-    {
-      "id":"T22016",
+      "id": "T22016",
       "first_name": "Bobette",
       "middle_name": "Médiamass",
       "last_name": "Ethelstone",
@@ -189,11 +117,11 @@
       "phone_no": "587-904-2220",
       "role": "Admin",
       "address": "Afghanistan",
-      "doj":"10/10/2010",
+      "doj": "10/10/2010",
       "isEdit": false
     },
     {
-      "id":"T22017",
+      "id": "T22017",
       "first_name": "Bud",
       "middle_name": "Marie-josée",
       "last_name": "Takos",
@@ -201,10 +129,11 @@
       "phone_no": "925-541-3707",
       "role": "Subscriber",
       "address": "Afghanistan",
-      "doj":"12/12/1992",
+      "doj": "12/12/1992",
       "isEdit": false
     },
-    {  "id":"T22018",
+    {
+      "id": "T22018",
       "first_name": "Johna",
       "middle_name": "Dafnée",
       "last_name": "Maggi",
@@ -212,23 +141,11 @@
       "phone_no": "793-630-4116",
       "role": "SuperAdmin",
       "address": "Afghanistan",
-      "doj":"10/05/1996",
+      "doj": "10/05/1996",
       "isEdit": false
     },
     {
-      "id":"T22019",
-      "first_name": "Amelia",
-      "middle_name": "Adélaïde",
-      "last_name": "Dumbleton",
-      "email": "adumbleton8@techcrunch.com",
-      "phone_no": "818-817-8740",
-      "role": "Subscriber",
-      "address": "Afghanistan",
-      "doj":"10/02/2005",
-      "isEdit": false
-    },
-    {
-      "id":"T22020",
+      "id": "T22020",
       "first_name": "Rasla",
       "middle_name": "Inès",
       "last_name": "Urvoy",
@@ -236,23 +153,23 @@
       "phone_no": "687-290-7249",
       "role": "Admin",
       "address": "Afghanistan",
-      "doj":"12/12/1991",
+      "doj": "12/12/1991",
       "isEdit": false
     },
-    {  
-      "id":"T22021",
+    {
+      "id": "T22021",
       "first_name": "Olimpia",
       "middle_name": "Erwéi",
       "last_name": "Drinkeld",
       "email": "odrinkeld0@wikipedia.org",
       "phone_no": "432-132-0511",
-      "role":"Admin",
+      "role": "Admin",
       "address": "Afghanistan",
       "doj": "04/12/1990",
       "isEdit": false
-    
     },
-    {  "id":"T22022",
+    {
+      "id": "T22022",
       "first_name": "Nolan",
       "middle_name": "Marie-thérèse",
       "last_name": "Corkell",
@@ -260,11 +177,11 @@
       "phone_no": "139-649-8238",
       "role": "SuperAdmin",
       "address": "Afghanistan",
-      "doj":"10/12/1990",
+      "doj": "10/12/1990",
       "isEdit": false
     },
     {
-      "id":"T22023",
+      "id": "T22023",
       "first_name": "Constancia",
       "middle_name": "Léa",
       "last_name": "Edds",
@@ -272,11 +189,11 @@
       "phone_no": "946-622-7849",
       "role": "Subscriber",
       "address": "Afghanistan",
-      "doj":"12/12/2012",
+      "doj": "12/12/2012",
       "isEdit": false
     },
     {
-      "id":"T22024",      
+      "id": "T22024",
       "first_name": "Yance",
       "middle_name": "Styrbjörn",
       "last_name": "Agus",
@@ -284,11 +201,11 @@
       "phone_no": "865-889-1912",
       "role": "Subscriber",
       "address": "Afghanistan",
-      "doj":"12/04/1995",
+      "doj": "12/04/1995",
       "isEdit": false
     },
     {
-      "id":"T22025",       
+      "id": "T22025",
       "first_name": "Margaretta",
       "middle_name": "Håkan",
       "last_name": "Ruppel",
@@ -296,11 +213,11 @@
       "phone_no": "486-588-5170",
       "role": "SuperAdmin",
       "address": "Afghanistan",
-      "doj":"05/10/1993",
+      "doj": "05/10/1993",
       "isEdit": false
     },
     {
-      "id":"T22026",
+      "id": "T22026",
       "first_name": "Bobette",
       "middle_name": "Médiamass",
       "last_name": "Ethelstone",
@@ -308,11 +225,11 @@
       "phone_no": "587-904-2220",
       "role": "Admin",
       "address": "Afghanistan",
-      "doj":"10/10/2010",
+      "doj": "10/10/2010",
       "isEdit": false
     },
     {
-      "id":"T22027",
+      "id": "T22027",
       "first_name": "Bud",
       "middle_name": "Marie-josée",
       "last_name": "Takos",
@@ -320,10 +237,11 @@
       "phone_no": "925-541-3707",
       "role": "Subscriber",
       "address": "Afghanistan",
-      "doj":"12/12/1992",
+      "doj": "12/12/1992",
       "isEdit": false
     },
-    {  "id":"T22028",
+    {
+      "id": "T22028",
       "first_name": "Johna",
       "middle_name": "Dafnée",
       "last_name": "Maggi",
@@ -331,11 +249,11 @@
       "phone_no": "793-630-4116",
       "role": "SuperAdmin",
       "address": "Afghanistan",
-      "doj":"10/05/1996",
+      "doj": "10/05/1996",
       "isEdit": false
     },
     {
-      "id":"T22029",
+      "id": "T22029",
       "first_name": "Amelia",
       "middle_name": "Adélaïde",
       "last_name": "Dumbleton",
@@ -343,11 +261,11 @@
       "phone_no": "818-817-8740",
       "role": "Subscriber",
       "address": "Afghanistan",
-      "doj":"10/02/2005",
+      "doj": "10/02/2005",
       "isEdit": false
     },
     {
-      "id":"T22030",
+      "id": "T22030",
       "first_name": "Rasla",
       "middle_name": "Inès",
       "last_name": "Urvoy",
@@ -355,24 +273,23 @@
       "phone_no": "687-290-7249",
       "role": "Admin",
       "address": "Afghanistan",
-      "doj":"12/12/1991",
+      "doj": "12/12/1991",
       "isEdit": false
     },
-
-    {  
-      "id":"T22031",
+    {
+      "id": "T22031",
       "first_name": "Olimpia",
       "middle_name": "Erwéi",
       "last_name": "Drinkeld",
       "email": "odrinkeld0@wikipedia.org",
       "phone_no": "432-132-0511",
-      "role":"Admin",
+      "role": "Admin",
       "address": "Afghanistan",
       "doj": "04/12/1990",
       "isEdit": false
-    
     },
-    {  "id":"T22032",
+    {
+      "id": "T22032",
       "first_name": "Nolan",
       "middle_name": "Marie-thérèse",
       "last_name": "Corkell",
@@ -380,11 +297,11 @@
       "phone_no": "139-649-8238",
       "role": "SuperAdmin",
       "address": "Afghanistan",
-      "doj":"10/12/1990",
+      "doj": "10/12/1990",
       "isEdit": false
     },
     {
-      "id":"T22033",
+      "id": "T22033",
       "first_name": "Constancia",
       "middle_name": "Léa",
       "last_name": "Edds",
@@ -392,11 +309,11 @@
       "phone_no": "946-622-7849",
       "role": "Subscriber",
       "address": "Afghanistan",
-      "doj":"12/12/2012",
+      "doj": "12/12/2012",
       "isEdit": false
     },
     {
-      "id":"T22034",      
+      "id": "T22034",
       "first_name": "Yance",
       "middle_name": "Styrbjörn",
       "last_name": "Agus",
@@ -404,11 +321,11 @@
       "phone_no": "865-889-1912",
       "role": "Subscriber",
       "address": "Afghanistan",
-      "doj":"12/04/1995",
+      "doj": "12/04/1995",
       "isEdit": false
     },
     {
-      "id":"T22035",       
+      "id": "T22035",
       "first_name": "Margaretta",
       "middle_name": "Håkan",
       "last_name": "Ruppel",
@@ -416,11 +333,11 @@
       "phone_no": "486-588-5170",
       "role": "SuperAdmin",
       "address": "Afghanistan",
-      "doj":"05/10/1993",
+      "doj": "05/10/1993",
       "isEdit": false
     },
     {
-      "id":"T22036",
+      "id": "T22036",
       "first_name": "Bobette",
       "middle_name": "Médiamass",
       "last_name": "Ethelstone",
@@ -428,11 +345,11 @@
       "phone_no": "587-904-2220",
       "role": "Admin",
       "address": "Afghanistan",
-      "doj":"10/10/2010",
+      "doj": "10/10/2010",
       "isEdit": false
     },
     {
-      "id":"T22037",
+      "id": "T22037",
       "first_name": "Bud",
       "middle_name": "Marie-josée",
       "last_name": "Takos",
@@ -440,10 +357,11 @@
       "phone_no": "925-541-3707",
       "role": "Subscriber",
       "address": "Afghanistan",
-      "doj":"12/12/1992",
+      "doj": "12/12/1992",
       "isEdit": false
     },
-    {  "id":"T22038",
+    {
+      "id": "T22038",
       "first_name": "Johna",
       "middle_name": "Dafnée",
       "last_name": "Maggi",
@@ -451,11 +369,11 @@
       "phone_no": "793-630-4116",
       "role": "SuperAdmin",
       "address": "Afghanistan",
-      "doj":"10/05/1996",
+      "doj": "10/05/1996",
       "isEdit": false
     },
     {
-      "id":"T22039",
+      "id": "T22039",
       "first_name": "Amelia",
       "middle_name": "Adélaïde",
       "last_name": "Dumbleton",
@@ -463,11 +381,11 @@
       "phone_no": "818-817-8740",
       "role": "Subscriber",
       "address": "Afghanistan",
-      "doj":"10/02/2005",
+      "doj": "10/02/2005",
       "isEdit": false
     },
     {
-      "id":"T22040",
+      "id": "T22040",
       "first_name": "Rasla",
       "middle_name": "Inès",
       "last_name": "Urvoy",
@@ -475,23 +393,23 @@
       "phone_no": "687-290-7249",
       "role": "Admin",
       "address": "Afghanistan",
-      "doj":"12/12/1991",
+      "doj": "12/12/1991",
       "isEdit": false
     },
-    {  
-      "id":"T22041",
+    {
+      "id": "T22041",
       "first_name": "Olimpia",
       "middle_name": "Erwéi",
       "last_name": "Drinkeld",
       "email": "odrinkeld0@wikipedia.org",
       "phone_no": "432-132-0511",
-      "role":"Admin",
+      "role": "Admin",
       "address": "Afghanistan",
       "doj": "04/12/1990",
       "isEdit": false
-    
     },
-    {  "id":"T22042",
+    {
+      "id": "T22042",
       "first_name": "Nolan",
       "middle_name": "Marie-thérèse",
       "last_name": "Corkell",
@@ -499,11 +417,11 @@
       "phone_no": "139-649-8238",
       "role": "SuperAdmin",
       "address": "Afghanistan",
-      "doj":"10/12/1990",
+      "doj": "10/12/1990",
       "isEdit": false
     },
     {
-      "id":"T22043",
+      "id": "T22043",
       "first_name": "Constancia",
       "middle_name": "Léa",
       "last_name": "Edds",
@@ -511,11 +429,11 @@
       "phone_no": "946-622-7849",
       "role": "Subscriber",
       "address": "Afghanistan",
-      "doj":"12/12/2012",
+      "doj": "12/12/2012",
       "isEdit": false
     },
     {
-      "id":"T22044",      
+      "id": "T22044",
       "first_name": "Yance",
       "middle_name": "Styrbjörn",
       "last_name": "Agus",
@@ -523,11 +441,11 @@
       "phone_no": "865-889-1912",
       "role": "Subscriber",
       "address": "Afghanistan",
-      "doj":"12/04/1995",
+      "doj": "12/04/1995",
       "isEdit": false
     },
     {
-      "id":"T22045",       
+      "id": "T22045",
       "first_name": "Margaretta",
       "middle_name": "Håkan",
       "last_name": "Ruppel",
@@ -535,23 +453,11 @@
       "phone_no": "486-588-5170",
       "role": "SuperAdmin",
       "address": "Afghanistan",
-      "doj":"05/10/1993",
+      "doj": "05/10/1993",
       "isEdit": false
     },
     {
-      "id":"T22046",
-      "first_name": "Bobette",
-      "middle_name": "Médiamass",
-      "last_name": "Ethelstone",
-      "email": "bethelstone5@unblog.fr",
-      "phone_no": "587-904-2220",
-      "role": "Admin",
-      "address": "Afghanistan",
-      "doj":"10/10/2010",
-      "isEdit": false
-    },
-    {
-      "id":"T22047",
+      "id": "T22047",
       "first_name": "Bud",
       "middle_name": "Marie-josée",
       "last_name": "Takos",
@@ -559,10 +465,11 @@
       "phone_no": "925-541-3707",
       "role": "Subscriber",
       "address": "Afghanistan",
-      "doj":"12/12/1992",
+      "doj": "12/12/1992",
       "isEdit": false
     },
-    {  "id":"T22048",
+    {
+      "id": "T22048",
       "first_name": "Johna",
       "middle_name": "Dafnée",
       "last_name": "Maggi",
@@ -570,11 +477,11 @@
       "phone_no": "793-630-4116",
       "role": "SuperAdmin",
       "address": "Afghanistan",
-      "doj":"10/05/1996",
+      "doj": "10/05/1996",
       "isEdit": false
     },
     {
-      "id":"T22049",
+      "id": "T22049",
       "first_name": "Amelia",
       "middle_name": "Adélaïde",
       "last_name": "Dumbleton",
@@ -582,11 +489,11 @@
       "phone_no": "818-817-8740",
       "role": "Subscriber",
       "address": "Afghanistan",
-      "doj":"10/02/2005",
+      "doj": "10/02/2005",
       "isEdit": false
     },
     {
-      "id":"T22050",
+      "id": "T22050",
       "first_name": "Rasla",
       "middle_name": "Inès",
       "last_name": "Urvoy",
@@ -594,24 +501,23 @@
       "phone_no": "687-290-7249",
       "role": "Admin",
       "address": "Afghanistan",
-      "doj":"12/12/1991",
+      "doj": "12/12/1991",
       "isEdit": false
     },
-
-    {  
-      "id":"T22001",
+    {
+      "id": "T22001",
       "first_name": "Olimpia",
       "middle_name": "Erwéi",
       "last_name": "Drinkeld",
       "email": "odrinkeld0@wikipedia.org",
       "phone_no": "432-132-0511",
-      "role":"Admin",
+      "role": "Admin",
       "address": "Afghanistan",
       "doj": "04/12/1990",
       "isEdit": false
-    
     },
-    {  "id":"T22002",
+    {
+      "id": "T22002",
       "first_name": "Nolan",
       "middle_name": "Marie-thérèse",
       "last_name": "Corkell",
@@ -619,11 +525,11 @@
       "phone_no": "139-649-8238",
       "role": "SuperAdmin",
       "address": "Afghanistan",
-      "doj":"10/12/1990",
+      "doj": "10/12/1990",
       "isEdit": false
     },
     {
-      "id":"T22003",
+      "id": "T22003",
       "first_name": "Constancia",
       "middle_name": "Léa",
       "last_name": "Edds",
@@ -631,11 +537,11 @@
       "phone_no": "946-622-7849",
       "role": "Subscriber",
       "address": "Afghanistan",
-      "doj":"12/12/2012",
+      "doj": "12/12/2012",
       "isEdit": false
     },
     {
-      "id":"T22004",      
+      "id": "T22004",
       "first_name": "Yance",
       "middle_name": "Styrbjörn",
       "last_name": "Agus",
@@ -643,11 +549,11 @@
       "phone_no": "865-889-1912",
       "role": "Subscriber",
       "address": "Afghanistan",
-      "doj":"12/04/1995",
+      "doj": "12/04/1995",
       "isEdit": false
     },
     {
-      "id":"T22005",       
+      "id": "T22005",
       "first_name": "Margaretta",
       "middle_name": "Håkan",
       "last_name": "Ruppel",
@@ -655,11 +561,11 @@
       "phone_no": "486-588-5170",
       "role": "SuperAdmin",
       "address": "Afghanistan",
-      "doj":"05/10/1993",
+      "doj": "05/10/1993",
       "isEdit": false
     },
     {
-      "id":"T22006",
+      "id": "T22006",
       "first_name": "Bobette",
       "middle_name": "Médiamass",
       "last_name": "Ethelstone",
@@ -667,11 +573,11 @@
       "phone_no": "587-904-2220",
       "role": "Admin",
       "address": "Afghanistan",
-      "doj":"10/10/2010",
+      "doj": "10/10/2010",
       "isEdit": false
     },
     {
-      "id":"T22007",
+      "id": "T22007",
       "first_name": "Bud",
       "middle_name": "Marie-josée",
       "last_name": "Takos",
@@ -679,10 +585,11 @@
       "phone_no": "925-541-3707",
       "role": "Subscriber",
       "address": "Afghanistan",
-      "doj":"12/12/1992",
+      "doj": "12/12/1992",
       "isEdit": false
     },
-    {  "id":"T22008",
+    {
+      "id": "T22008",
       "first_name": "Johna",
       "middle_name": "Dafnée",
       "last_name": "Maggi",
@@ -690,11 +597,11 @@
       "phone_no": "793-630-4116",
       "role": "SuperAdmin",
       "address": "Afghanistan",
-      "doj":"10/05/1996",
+      "doj": "10/05/1996",
       "isEdit": false
     },
     {
-      "id":"T22009",
+      "id": "T22009",
       "first_name": "Amelia",
       "middle_name": "Adélaïde",
       "last_name": "Dumbleton",
@@ -702,11 +609,11 @@
       "phone_no": "818-817-8740",
       "role": "Subscriber",
       "address": "Afghanistan",
-      "doj":"10/02/2005",
+      "doj": "10/02/2005",
       "isEdit": false
     },
     {
-      "id":"T2200",
+      "id": "T2200",
       "first_name": "Rasla",
       "middle_name": "Inès",
       "last_name": "Urvoy",
@@ -714,7 +621,7 @@
       "phone_no": "687-290-7249",
       "role": "Admin",
       "address": "Afghanistan",
-      "doj":"12/12/1991",
+      "doj": "12/12/1991",
       "isEdit": false
     }
   ]
